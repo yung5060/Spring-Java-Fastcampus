@@ -1,7 +1,7 @@
 public class Bus {
     private int busNumber;
     private int passengerCnt;
-    private double money;
+    private int money;
 
     public Bus(int busNumber) {
         this.busNumber = busNumber;

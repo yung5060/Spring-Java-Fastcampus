@@ -17,6 +17,11 @@ public class Student {
         this.balance -= 1200;
     }
 
+    public void takeTaxi(Taxi taxi, int fee) {
+        taxi.take(fee);
+        this.balance -= fee;
+    }
+
     public void showInfo() {
         System.out.println(studentName + "님의 남은 돈은 " + balance + "원 입니다.");
     }

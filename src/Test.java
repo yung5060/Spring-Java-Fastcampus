@@ -20,5 +20,16 @@ public class Test {
         bus500.showBusInfo();
 
         greenSubway.showSubwayInfo();
+
+        System.out.println("======================================");
+
+        Student student3 = new Student("Edward", 20000);
+
+        Taxi taxi1 = new Taxi("잘나간다 운수");
+
+        student3.takeTaxi(taxi1, 10000);
+
+        student3.showInfo();
+        taxi1.showTaxiInfo();
     }
 }
