@@ -1,3 +1,5 @@
+package class14;
+
 public class Subway {
     private int lineNumber;
     private int passengerCnt;

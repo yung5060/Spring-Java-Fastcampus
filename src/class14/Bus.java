@@ -1,3 +1,5 @@
+package class14;
+
 public class Bus {
     private int busNumber;
     private int passengerCnt;

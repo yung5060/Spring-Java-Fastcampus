@@ -1,3 +1,5 @@
+package class14;
+
 public class Student {
     private String studentName;
     private int balance;
