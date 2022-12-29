@@ -10,5 +10,6 @@ public class ThreeDPrinterTest {
         printer.setMaterial(powder);
 
         Powder p = (Powder) printer.getMaterial();
+        System.out.println(p);
     }
 }
