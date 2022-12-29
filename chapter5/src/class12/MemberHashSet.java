@@ -1,22 +1,22 @@
-package class10;
+package class12;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 
-public class MemberArrayList {
+public class MemberHashSet {
 
-    private ArrayList<Member> arrayList;
+    private HashSet<Member> hashSet;
 
-    public MemberArrayList() {
-        this.arrayList = new ArrayList<>();
+    public MemberHashSet() {
+        this.hashSet = new HashSet<>();
     }
 
-    public MemberArrayList(int size) {
-        this.arrayList = new ArrayList<>(size);
+    public MemberHashSet(int size) {
+        this.hashSet = new HashSet<>(size);
     }
 
     public void addMember(Member member) {
-        arrayList.add(member);
+        hashSet.add(member);
     }
 
     public boolean removeMember(int memberId) {
@@ -27,11 +27,11 @@ public class MemberArrayList {
 //                return true;
 //            }
 //        }
-        Iterator<Member> ir = arrayList.iterator();
+        Iterator<Member> ir = hashSet.iterator();
         while(ir.hasNext()) {
             Member member = ir.next();
             if (member.getMemberId() == memberId) {
-                arrayList.remove(member);
+                hashSet.remove(member);
                 return true;
             }
         }
@@ -40,7 +40,7 @@ public class MemberArrayList {
     }
 
     public void showAllMembers() {
-        for (Member member : arrayList) {
+        for (Member member : hashSet) {
             System.out.print(member + " ");
         }
         System.out.println();
