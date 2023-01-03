@@ -1,4 +1,4 @@
-package class7;
+package class6;
 
 import java.util.Arrays;
 import java.util.function.BinaryOperator;
