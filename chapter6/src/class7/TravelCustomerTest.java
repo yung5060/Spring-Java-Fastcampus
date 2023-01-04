@@ -17,6 +17,12 @@ public class TravelCustomerTest {
         customerList.add(customerHong);
 
         System.out.println("고객 명단 출력");
-//        () -> customerList()
+        customerList.stream().map(c -> c.getName()).forEach(s -> System.out.println(s));
+
+        System.out.println("여행비용");
+        System.out.println(customerList.stream().mapToInt(c -> c.getPrice()).sum());
+
+        System.out.println("20살 이상 고객이름 정렬");
+        customerList.stream().filter(c -> c.getAge() >= 20).map(c -> c.getName()).sorted().forEach(s -> System.out.println(s));
     }
 }
